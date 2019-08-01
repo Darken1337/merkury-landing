@@ -1,0 +1,47 @@
+.footer-wrapper{
+    background-color: #0e1a35;
+    padding: 3.45vw 0;
+}
+.navigation-footer{
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  color: #8492af;
+  @include respond(phone){
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-row-gap: 1em;
+  }
+}
+.menu-footer{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 51px;
+  margin-right: 4.9em;
+  &__item{
+    color: #8492af;
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 0.36px;
+    &:hover{
+      color: #fff;
+    }
+  }
+  @include respond(phone){
+    margin-right: 0;
+  }
+}
+
+.rights-reserved{
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.social-media{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 21px;
+  font-size: 1.8rem;
+  i:hover {
+    color: #fff;
+  }
+}

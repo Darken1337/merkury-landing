@@ -1,0 +1,25 @@
+//Breakpoints
+// phone - 320px
+// tablet - 768px
+// desktop - 1024px
+// desktop-large - 1600px
+
+@mixin respond($break) {
+  @if $break == phone{
+    @media (max-width: 30em) { @content }; //480px
+  } @else if $break == tablet {
+     @media (max-width: 48em) { @content }; //768px 
+  }@else if $break == desktop {
+    @media (max-width: 74.94em) { @content }; //1199px   
+  }@else if $break == desktop-large{
+    @media (max-width: 80em) { @content }; //1600px
+  }
+           
+}
+  
+@mixin centerItem{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}  

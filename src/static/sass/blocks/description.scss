@@ -1,0 +1,123 @@
+.description{
+  &-wrapper{
+    padding: 4.8vw 7.95vw 11.65vw 7.6vw;
+  }
+}
+
+
+.template{
+  text-align: center;
+  padding: 0 18.2vw 3.05vw 18.66vw;
+  @media screen and (max-width: 700px){
+    padding-left: 0;
+    padding-right: 0;
+  }
+  &__heading{
+    font-size: 6rem;
+    font-weight: 100;
+    color: #0e1a35;
+  }
+  &__text{
+    color: #8492af;
+    font-size: 1.8em;
+    margin-top: 2.1vw;
+    line-height: 1.5;
+  }
+}
+
+.dashboard{
+  position: relative;
+  &__image{
+    margin-left: 11.55vw;
+    width: 73%;
+    height: auto;
+    @media screen and (max-width: 1100px) {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}
+
+.tip{
+  position: relative;
+  max-width: 257px;
+  @media screen and (max-width: 1100px) {
+    padding: 10px 15px;
+    background-color: rgba(#fff, .8);
+  }
+  @media screen and (max-width: 580px) {
+    display: none;
+  }
+  &::before{
+    content: '';
+    display: block;
+    width: 31.85vw;
+    height: 3px;
+    position: absolute;
+    top: 46px;
+    background: #5584ff;
+    @include respond(tablet){
+      display: none;
+    }
+  }
+  &_one{
+    position: absolute;
+    top: 12%;
+    text-align: left;
+    left: 9%;
+    @include respond(tablet){
+      top: 0%;
+      left: 0%;
+    }
+    &::before{
+      left: 0;
+    }
+    .tip__eclipse{
+      left: 31.85vw;
+    }
+  }
+  &_two{
+    position: absolute;
+    bottom: 22.5%;
+    right: 8%;
+    text-align: right;
+    @include respond(tablet){
+      bottom: 0%;
+      right: 0%;
+    }
+     &::before{
+      right: 0;
+    }
+    .tip__eclipse{
+      right: 31.85vw;
+    }
+  }
+  &__title{
+    color: #0e1a35;
+    font-weight: 700;
+    font-size: 2.4rem;
+    letter-spacing: 0.5px;
+  }
+  &__text{
+    font-weight: 700;
+    font-size: 18px;
+    color: #8492af;
+    line-height: 1.6;
+    margin-top: 4.1rem;
+    max-width: 233px;
+  }
+  &__eclipse{
+    position: absolute;
+    top: 24px;
+    display: block;
+    width: 4.8rem;
+    height: 4.8rem;
+    @media screen and (max-width: 1200px){
+      top: 28px;
+    }
+    @include respond(tablet){
+      display: none;
+    }
+  }
+  
+}

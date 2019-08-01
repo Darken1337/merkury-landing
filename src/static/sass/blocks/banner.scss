@@ -1,0 +1,57 @@
+.banner{
+  text-align: center;
+  &-wrapper{
+    background-repeat:no-repeat; 
+    background-position: top center; 
+    background-size: cover;
+    padding-top: 14.7vw;
+    @media screen and (max-width: 968px) {
+      padding-top: 150px;
+    }
+    @include respond(tablet){
+      padding-bottom: 100px;
+    }
+  }
+  &__header{
+    color: #ffffff;
+    font-size: 6rem;
+    font-weight: 100;
+  }
+
+  &__subtext{
+    color: #6f7b97;
+    font-size: 3.6rem;
+    margin-top: 0.6rem;
+    margin-bottom: 8.2rem;
+  } 
+
+  &__button{
+    color: #ffffff;
+    font-weight: 700;
+    padding: 14px 53px;
+    background-color: #5584ff;
+    border-radius: 26px;
+    font-size: 18px;
+    transition: all .6s;
+    &:hover{
+      background-color: #fff;
+      color: #5584ff;
+    }
+  }  
+
+  &__app-interface{
+    margin-bottom: -9.5vw;
+    width: 51vw;
+    position: relative;
+    bottom: 3.5vw;
+
+   @include respond(tablet){
+      display: none;
+    }
+  }
+
+  &__img-wrap{
+    width: 100%;
+    margin-top: 4.5vw;
+  }   
+}

@@ -1,0 +1,24 @@
+@import 'base';
+@import 'variables';
+@import 'mixins';
+@import 'animations';
+@import 'modules';
+
+//Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700');
+   
+@import 'blocks/header';
+
+@import 'blocks/banner';
+
+@import 'blocks/features';
+  
+@import 'blocks/mobile-app';
+
+@import 'blocks/dragdrop';
+
+@import 'blocks/description';
+
+@import 'blocks/pricing';
+
+@import 'blocks/footer';

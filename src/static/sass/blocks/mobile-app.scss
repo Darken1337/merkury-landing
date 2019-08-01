@@ -1,0 +1,81 @@
+.mobile-app{
+  &-wrapper{
+    position: relative;
+    padding-bottom: 14.15vw;
+  }
+}
+
+.tablets{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  @media screen and (max-width: 1199px){
+    position: unset;
+    width: 70%;
+    margin: 5rem 0 0 auto;
+  } 
+  @media screen and (max-width: 480px){
+    width: 90%;
+  } 
+}
+
+.you-need{
+  padding-top: 3.1vw;
+  width: 50%;
+  padding-left: 5.7vw;
+  max-width: 651px;
+  @media screen and (max-width: 1199px){
+    width: 70%;
+    margin-left: auto;
+    margin-right: 10rem;
+    &__header{
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 568px){
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+  &__header{
+    color: #0e1a35;
+    font-size: 6rem;
+    font-weight: 100;
+  }
+  &__content{
+    max-width: 580px;
+    @media screen and (max-width: 1199px){
+      margin-left: auto;
+    }
+  }
+  &__text{
+    font-size: 1.8rem;
+    color: #8c99b4;
+    line-height: 30px;
+    
+    &:first-of-type{
+      margin-top: 5.7rem;
+      margin-bottom: 4.4rem;
+    }
+  }
+  &-menu {
+    margin-top: 5.7rem;
+    text-align: left;
+    &__item{
+      font-size: 2.2rem;
+      color: #5284ff;
+      &:not(:last-child){
+        margin-bottom: 28px;
+      }
+      &::before{
+        content: '\f058';
+        font-family: "Font Awesome 5 Free";
+        display: inline-block;
+        color: #5284ff;
+        font-size: 3rem;
+        padding-right: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.curtain
+  .login-popup
+    form.login-popup__form(action="#" method="POST")
+      button.login-popup__close: i.fas.fa-times
+      h2.login-popup__headline Login, please:
+      label.login-popup__label(for="user_login") Login:
+        input.login-popup__input(type="text" id="user_login")
+      label.login-popup__label(for="user_pass") Password:
+        input.login-popup__input(type="password" id="user_pass")
+      label.login-popup__label
+        input.login-popup__checkbox(type="checkbox" value="Remember me")
+        span.login-popup__checkbox-describtion Remember me
+      input.login-popup__submit(type="submit" value="Log In")
+      button.login-popup__link(type="button") Forget Password?
+      button.login-popup__link(type="button") Have no account? Resgister now!

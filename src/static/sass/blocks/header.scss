@@ -1,0 +1,166 @@
+#header{
+  position: absolute;
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 11px;
+  margin-right: 30px;
+  position: relative;
+  padding: 4.1rem 0;
+  
+  @include respond(tablet){
+    margin-right: 0;
+  }
+}
+
+.logo {
+  width: 22.3rem;
+
+  &__content{
+    width: 100%;
+    height: auto;
+  }
+}
+ 
+.hamburger{
+  display: none;
+  margin-right: 50px;
+  width: 37px;
+  height: 30px;
+  padding: 10px 3px;
+
+  @media screen and (max-width: 480px){
+    margin-right: 0px;
+  }
+  &.hamburger_active>.hamburger__line{
+
+    &:first-child{
+      margin-bottom: -3px;
+      transform: rotate(45deg)
+    }
+
+    &:nth-child(2){
+      display: none;
+    }
+
+    &:last-child{
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__line{
+    display: block;
+    background-color: #ffffff;
+    width: 33px;
+    height: 3px;
+    border-radius: 5px;
+    transition: transform .7s ease;
+
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+
+  @include respond(tablet){
+    display: block;
+  }
+}
+
+.menu{
+  display: flex;
+  align-items: center;position: static;
+  flex-direction: row;
+  justify-content: initial;
+  text-align: initial;
+  background-color: transparent;
+  margin-right: 2.65vw;
+  &__item {
+    font-size: 1.8rem;
+    color: #ffffff;
+    padding: 23px 0;
+    width: auto;
+
+    &:not(:last-child){
+      margin-right: 2.65vw;
+    }
+  }
+
+  @include respond(tablet){
+    height: 0px;
+    flex-direction: column;
+    background-color: rgba(0,0,0,.7);
+    position: absolute;
+    text-align: center;
+    width: 100vw;
+    right: 0;
+    top: 100%;
+    overflow: hidden;
+
+    &--active{
+      animation: slideMenuDown 1s linear 0s forwards;
+    }
+
+    &--inactive{
+      animation: slideMenuDown 1s linear 0s backwards; 
+    }
+
+    &__item{
+      padding: 1.5rem 0;
+      width: 100%;
+      font-weight: 900;
+      font-size: 20px;
+      color: #fff;
+      position: relative;
+      a{
+        width: 100%;
+      }
+      &:hover{
+        background-color: $blue;
+      }
+
+      &::after{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 95%;
+        left: 10%;
+        width: 80%;
+        height: 2px;
+        background-color: $blue;
+        z-index: 100;
+      }
+      &:not(:last-child){
+        margin-right: 0;
+      }
+    }
+    
+  }
+} 
+
+.login{
+  color: $blue;
+  border: 3px solid $blue;
+  border-radius: 30px;
+  padding: 13px 40px;
+  font-size: 18px;
+  @include respond(phone){
+    padding: 0;
+    border: 0;
+    font-size: 20px;
+    color: #fff;
+  }
+}
+
+.row{
+  display: flex;
+}
+
+.curtain{
+  display: none;
+}

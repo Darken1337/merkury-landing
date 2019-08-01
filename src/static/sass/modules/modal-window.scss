@@ -1,0 +1,70 @@
+.curtain{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,.6);
+  z-index: 4;
+}
+
+.login-popup{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid #00ffff;
+  border-radius: 5px;
+  transition: all .3s ease;
+  @media screen and (max-width: 700px){
+    width: 90%;
+  }
+  &--active{
+    transform: translate(-50%, -50%);
+  }
+  &__form{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 30px 50px;
+    background-color: $blue;
+    grid-row-gap: 10px;
+    z-index: 7;
+    height: 100%;
+    color: #fff;
+    
+  }
+  &__headline{
+    font-size: 3rem;
+    font-weight: thin;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: .5em;
+  }
+  &__label{
+    font-size: 2rem;
+  }
+  &__input{
+    display: block;
+    padding: 10px 15px;
+    width: 100%;
+    font-size: 2rem;
+    border-radius: 10px;
+  }
+  &__submit{
+    border: 2px solid #fff;
+    background-color: #33adff;
+    padding: 5px 20px;
+    font-weight: 700;
+    border-radius: 5px;
+    justify-self: left;
+    font-size: 2rem;
+    color: #fff;
+  }
+  &__link{
+    text-decoration: underline;
+  }
+  &__close{
+    font-size: 2rem;;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+}

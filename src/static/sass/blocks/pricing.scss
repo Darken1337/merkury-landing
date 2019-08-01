@@ -1,0 +1,123 @@
+.pricing {
+  &-wrapper{
+    @extend .container;
+    padding-bottom: 5vw;
+  }
+  &__headline{
+    grid-area: headline;
+    text-align: center;
+    color: #0e1a35;
+    font-size: 6rem;
+    font-weight: 100;
+    margin-bottom: 8.7rem;
+    @include respond(phone){
+      margin-top: 40px;
+    }
+  }
+}
+
+.prices{
+  display: flex;
+  justify-content: center;
+  @media screen and (max-width: 936px){
+    flex-direction: column;
+  }
+}
+
+.price{
+  text-align: center;
+  box-shadow: 5px 5px 30px 25px #eff0f2;
+  padding: 4rem 3rem 4rem 5rem;
+  max-width: 360px;
+  @media screen and (max-width: 936px){
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+  @include respond(phone){
+    width: 100%;
+  }
+  &:not(:last-child){
+    margin-right: 7vw;
+    @media screen and (max-width: 936px){
+      margin-right: auto;
+      margin-bottom: 5rem;
+    }
+  }
+  &__title{
+    color: #0e1a35;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.48px;
+  }
+  &__dollar{
+    color: #0e1a35;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 0.44px;
+  }
+  &__number{
+    color: $blue-dark;
+    font-size: 7.2rem;
+    letter-spacing: 1.44px;
+    font-weight:700;
+    margin: 3.3rem 0;
+  }
+  &__per{
+    color: #8492af;
+    font-size: 2.4rem;
+    font-weight: 400;
+    letter-spacing: 0.48px;
+  }  
+  &-list__item{
+    color: #8492af;
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 0.36px;
+    padding-left: 5px;
+    text-indent: -10px;
+    &:not(:last-child){
+      margin-bottom: 12px;
+    }
+    &--enabled::before{
+      content: '\f058';
+      font-family: "Font Awesome 5 Free";
+      display: inline-block;
+      color: #5284ff;
+      position: relative;
+      left: -5px;
+      top: 50%;
+      transform: translateX(-50%);
+      font-size: 2.7rem;
+    }
+    &--disabled::before{
+      content: '\f057';
+      font-family: "Font Awesome 5 Free";
+      display: inline-block;
+      color: #f94c86;
+      position: relative;
+      left: -5px;
+      top: 50%;
+      transform: translateX(-50%);
+      font-size: 2.7rem;
+    }
+  }
+  &-description{
+    max-width: 871px;
+    margin: 10rem auto 6.7rem auto;
+    color: #8492af;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+  }
+  &-join{
+    display: block;
+    border-radius: 24px;
+    background-color: #5584ff;
+    color: #fff;
+    padding: 16px 62px;
+    font-size: 18px;
+    margin: 0 auto;
+  }
+
+}

@@ -1,0 +1,64 @@
+.dragdrop-wrapper(style="background-image: url(static/img/bg-header.png)")
+  .container
+    .dragdrop
+      .dragdrop__column
+        .state
+          .state__title In Progress
+          .state__number (3)
+          .state__more: i.fas.fa-chevron-right
+        .task-placeholder
+          .task
+            .task__img F
+            .task__content
+              .task__title Buisiness cards
+              .task__time 
+            .task__options
+              span.dot
+              span.dot
+              span.dot
+        .task-placeholder
+          .task
+            .task__img L
+            .task__content
+              .task__title Buisiness cards
+              .task__time 5 Days left
+            .task__options
+              span.dot
+              span.dot
+              span.dot
+        .task-placeholder
+          .task
+            .task__img S
+            .task__content
+              .task__title Buisiness cards
+              .task__time.task__time_is-delayed 2 days delay
+            .task__options
+              span.dot
+              span.dot
+              span.dot
+      .dragdrop__column
+        .state
+          .state__title Completed
+          .state__number (2)
+          .state__more 
+            i.fas.fa-chevron-right
+        .task-placeholder.task-placeholder_completed
+          .task
+            .task__img I
+            .task__content
+              .task__title Buisiness cards
+              .task__time.task__time_is-completed Completed
+            .task__options
+              span.dot
+              span.dot
+              span.dot
+        .task-placeholder.task-placeholder_completed
+      .dragdrop-slider.js-dragdrop-slider
+        .dragdrop-slide
+          h3.dragdrop-slide__header Drag &#38; Drop
+          p.dragdrop-slide__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          p.dragdrop-slide__text Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  
+        .dragdrop-slide
+          h3.dragdrop-slide__header second slide
+          p.dragdrop-slide__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          p.dragdrop-slide__text Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

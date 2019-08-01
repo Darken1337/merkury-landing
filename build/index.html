@@ -1,0 +1,262 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" type="text/css" href="static/libs/css/normalize.min.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="static/css/main.css"/>
+    <title>Mercury Landing Page</title>
+  </head>
+  <body>
+    <div class="curtain">
+      <div class="login-popup">
+        <form class="login-popup__form" action="#" method="POST">
+          <button class="login-popup__close"><i class="fas fa-times"></i></button>
+          <h2 class="login-popup__headline">Login, please:</h2>
+          <label class="login-popup__label" for="user_login">Login:
+            <input class="login-popup__input" type="text" id="user_login"/>
+          </label>
+          <label class="login-popup__label" for="user_pass">Password:
+            <input class="login-popup__input" type="password" id="user_pass"/>
+          </label>
+          <label class="login-popup__label">
+            <input class="login-popup__checkbox" type="checkbox" value="Remember me"/><span class="login-popup__checkbox-describtion">Remember me</span>
+          </label>
+          <input class="login-popup__submit" type="submit" value="Log In"/>
+          <button class="login-popup__link" type="button">Forget Password?</button>
+          <button class="login-popup__link" type="button">Have no account? Resgister now!</button>
+        </form>
+      </div>
+    </div>
+    <header id="header">
+      <div class="container">
+        <nav class="navigation">
+          <div class="logo"><img class="logo__content" src="static/img/logo.png" alt="logo"/></div>
+          <div class="row">
+            <ul class="menu" id="menu">
+              <li class="menu__item"><a class="scroll-features" href="#features">Features</a></li>
+              <li class="menu__item"><a class="scroll-pricing" href="#pricing">Pricing</a></li>
+              <li class="menu__item"><a class="scroll-mobile" href="#footer">Blog</a></li>
+              <li class="menu__item"><a class="scroll-footer" href="#mobile-app">Contact</a></li>
+            </ul>
+            <button class="login" id="loginPopup">Login</button>
+          </div>
+          <button class="hamburger" type="button" id="hamburger"><span class="hamburger__line"></span><span class="hamburger__line"></span><span class="hamburger__line"></span></button>
+        </nav>
+      </div>
+    </header>
+    <section id="banner">
+      <div class="banner-wrapper" style="background-image: url(static/img/bg-header.png)">
+        <div class="container">
+          <div class="banner">
+            <h1 class="banner__header">Grow Your business with Merkury</h1>
+            <p class="banner__subtext">Your partner in crime!</p>
+            <button class="banner__button">Get started</button>
+            <div class="banner__img-wrap"><img class="banner__app-interface" src="static/img/dashboard-header.png" alt="app-interface"/></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="features">
+      <div class="features-wrapper">
+        <div class="feature">
+          <div class="feature__image"><img src="static/img/workflow.png" alt="equals"/></div>
+          <h2 class="feature__header">Manage Your Workflow</h2>
+          <p class="feature__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+          <button class="feature__button">See more</button>
+        </div>
+        <div class="feature">
+          <div class="feature__image"><img src="static/img/analitics.png" alt="graph"/></div>
+          <h2 class="feature__header">Analytics &#38; insights</h2>
+          <p class="feature__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+          <button class="feature__button">See more</button>
+        </div>
+        <div class="feature">
+          <div class="feature__image"><img src="static/img/calendar.png" alt="calendar"/></div>
+          <h2 class="feature__header">Orginize Your Deadlines</h2>
+          <p class="feature__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
+          <button class="feature__button">See more</button>
+        </div>
+      </div>
+    </section>
+    <section id="mobile-app">
+      <div class="mobile-app-wrapper">
+        <div class="container">
+          <div class="you-need">
+            <h2 class="you-need__header">All You need is a browser!</h2>
+            <div class="you-need__content">
+              <p class="you-need__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+              <p class="you-need__text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+              <ul class="you-need-menu">
+                <li class="you-need-menu__item">Lorem ipsum dolor sit amet consectetur</li>
+                <li class="you-need-menu__item">Ut enim ad minim veniam quis nostrud</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="tablets"><img class="tablets__image" src="static/img/app-photo.png" alt="app-photo"/></div>
+      </div>
+    </section>
+    <section id="dragdrop">
+      <div class="dragdrop-wrapper" style="background-image: url(static/img/bg-header.png)">
+        <div class="container">
+          <div class="dragdrop">
+            <div class="dragdrop__column">
+              <div class="state">
+                <div class="state__title">In Progress</div>
+                <div class="state__number">(3)</div>
+                <div class="state__more"><i class="fas fa-chevron-right"></i></div>
+              </div>
+              <div class="task-placeholder">
+                <div class="task">
+                  <div class="task__img">F</div>
+                  <div class="task__content">
+                    <div class="task__title">Buisiness cards</div>
+                    <div class="task__time"> </div>
+                  </div>
+                  <div class="task__options"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                </div>
+              </div>
+              <div class="task-placeholder">
+                <div class="task">
+                  <div class="task__img">L</div>
+                  <div class="task__content">
+                    <div class="task__title">Buisiness cards</div>
+                    <div class="task__time">5 Days left</div>
+                  </div>
+                  <div class="task__options"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                </div>
+              </div>
+              <div class="task-placeholder">
+                <div class="task">
+                  <div class="task__img">S</div>
+                  <div class="task__content">
+                    <div class="task__title">Buisiness cards</div>
+                    <div class="task__time task__time_is-delayed">2 days delay</div>
+                  </div>
+                  <div class="task__options"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                </div>
+              </div>
+            </div>
+            <div class="dragdrop__column">
+              <div class="state">
+                <div class="state__title">Completed</div>
+                <div class="state__number">(2)</div>
+                <div class="state__more"> <i class="fas fa-chevron-right"></i></div>
+              </div>
+              <div class="task-placeholder task-placeholder_completed">
+                <div class="task">
+                  <div class="task__img">I</div>
+                  <div class="task__content">
+                    <div class="task__title">Buisiness cards</div>
+                    <div class="task__time task__time_is-completed">Completed</div>
+                  </div>
+                  <div class="task__options"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                </div>
+              </div>
+              <div class="task-placeholder task-placeholder_completed"></div>
+            </div>
+            <div class="dragdrop-slider js-dragdrop-slider">
+              <div class="dragdrop-slide">
+                <h3 class="dragdrop-slide__header">Drag &#38; Drop</h3>
+                <p class="dragdrop-slide__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <p class="dragdrop-slide__text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  </p>
+              </div>
+              <div class="dragdrop-slide">
+                <h3 class="dragdrop-slide__header">second slide</h3>
+                <p class="dragdrop-slide__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <p class="dragdrop-slide__text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="description">
+      <div class="description-wrapper">
+        <div class="template">
+          <h4 class="template__heading">Powerfull PSD Template</h4>
+          <p class="template__text"> Lorem ipsum elp iste natus s sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et  voluptatem.</p>
+        </div>
+        <div class="dashboard">
+          <div class="dashboard__image"><img src="static/img/screen-mockup.png" alt="dashboard"/></div>
+          <div class="tip tip_one">
+            <div class="tip__eclipse"><img src="static/img/eclipse.png" alt=""/></div>
+            <div class="tip__title">Clean &#38; modern layout</div>
+            <div class="tip__text tip__text_one">Lorem isor inciddsdsds dsdsdsdsidunt ut labore et dolore magna aliqua.</div>
+          </div>
+          <div class="tip tip_two">
+            <div class="tip__eclipse"><img src="static/img/eclipse.png" alt=""/></div>
+            <div class="tip__title">Easy to customize</div>
+            <div class="tip__text tip__text_two">Lorem isor inciddsdsds dsdsdsdsidunt ut labore et dolore magna aliqua.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="pricing">
+      <div class="pricing-wrapper">
+        <h4 class="pricing__headline">Check our pricing!</h4>
+        <div class="prices">
+          <div class="price">
+            <div class="price__title">Bronze plan</div>
+            <div class="price__number"> <span class="price__dollar">$</span>19<span class="price__per">/mon</span></div>
+            <ul class="price__list price-list">
+              <li class="price-list__item price-list__item--enabled">Lorem ipsum dolor sit am</li>
+              <li class="price-list__item price-list__item--enabled">Lorem ipsum dolor sit am</li>
+              <li class="price-list__item price-list__item--disabled">Lorem ipsum dolor sit am</li>
+              <li class="price-list__item price-list__item--disabled">Lorem ipsum dolor sit am</li>
+            </ul>
+          </div>
+          <div class="price">
+            <div class="price__title">Silver plan</div>
+            <div class="price__number"> <span class="price__dollar">$</span>49<span class="price__per">/mon</span></div>
+            <ul class="price__list price-list">
+              <li class="price-list__item price-list__item--enabled">Lorem ipsum dolor sit am</li>
+              <li class="price-list__item price-list__item--enabled">Lorem ipsum dolor sit am</li>
+              <li class="price-list__item price-list__item--enabled">Lorem ipsum dolor sit am</li>
+              <li class="price-list__item price-list__item--disabled">Lorem ipsum dolor sit am</li>
+            </ul>
+          </div>
+          <div class="price">
+            <div class="price__title">Gold plan</div>
+            <div class="price__number"> <span class="price__dollar">$</span>99<span class="price__per">/mon</span></div>
+            <ul class="price__list price-list">
+              <li class="price-list__item price-list__item--enabled">Lorem ipsum dolor sit am</li>
+              <li class="price-list__item price-list__item--enabled">Lorem ipsum dolor sit am</li>
+              <li class="price-list__item price-list__item--enabled">Lorem ipsum dolor sit am</li>
+              <li class="price-list__item price-list__item--enabled">Lorem ipsum dolor sit am</li>
+            </ul>
+          </div>
+        </div>
+        <p class="price-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        <button class="price-join">Join now!</button>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="footer-wrapper">
+        <div class="container">
+          <nav class="navigation-footer">
+            <div class="rights-reserved">© 2016 Merkury All Right Reserved </div>
+            <ul class="menu-footer">
+              <li class="menu-footer__item"><a class="menu-footer__link" href="#">Pricing</a></li>
+              <li class="menu-footer__item"><a class="menu-footer__link" href="#">Pricing</a></li>
+              <li class="menu-footer__item"><a class="menu-footer__link" href="#">Pricing</a></li>
+            </ul>
+            <ul class="social-media">
+              <div class="social-media__item"><i class="fab fa-facebook-f"></i></div>
+              <div class="social-media__item"><i class="fab fa-twitter"></i></div>
+              <div class="social-media__item"><i class="fab fa-google-plus-g"></i></div>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="static/libs/js/moveTo.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>

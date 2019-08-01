@@ -1,0 +1,14 @@
+.container
+  nav.navigation
+    .logo: img.logo__content(src="static/img/logo.png", alt="logo")
+    .row
+      ul.menu#menu
+        li.menu__item: a.scroll-features(href="#features") Features
+        li.menu__item: a.scroll-pricing(href="#pricing") Pricing
+        li.menu__item: a.scroll-mobile(href="#footer") Blog
+        li.menu__item: a.scroll-footer(href="#mobile-app") Contact
+      button.login#loginPopup Login
+    button(type="button").hamburger#hamburger
+      span.hamburger__line
+      span.hamburger__line
+      span.hamburger__line

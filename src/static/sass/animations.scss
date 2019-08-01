@@ -1,0 +1,21 @@
+@keyframes slideMenuDown {
+  0%{
+    height: 0px;
+  }
+  20%{
+    height: $menuHeight * 0.2;
+  }
+  40%{
+    height: $menuHeight * 0.4;
+  }
+  60%{
+    height: $menuHeight * 0.6;
+  }
+  80%{
+    height: $menuHeight * 0.8;
+  }
+  100%{
+    height: $menuHeight;
+  }
+}
+

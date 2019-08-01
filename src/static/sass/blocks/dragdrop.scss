@@ -1,0 +1,202 @@
+.dragdrop{
+  display: flex;
+  @media screen and (max-width: 1100px) {
+    flex-wrap: wrap;
+  }
+  &-wrapper{
+      padding-top: 7.9vw;
+      padding-bottom: 9.9vw;
+      background-repeat: no-repeat; 
+      background-position: top center;
+      background-size: cover;
+  }
+  &__column{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-width: 20.63vw;
+    width: calc(100%/3 - 30px/3 - 100px/3);
+    @media screen and (max-width: 1100px) {
+      width: calc(50% - 30px/2);
+      min-width: 36.9rem;
+    }
+    @include respond(tablet){
+      width: 100%;
+      margin: 0 auto;
+    }
+    &:first-child{
+      margin-right: 3rem;
+      @include respond(tablet){
+        margin-right: 0;
+        margin-bottom: 5rem;
+      }
+    }
+  }
+  &-slider{
+    padding-top: 2.6vw;
+    margin-left: 6.1vw;
+    padding-bottom: 7.3rem;
+    position: relative;
+    width: calc(100%/3 - 30px/3 - 100px/3);
+    max-width: 503px;
+    @media screen and (max-width: 1100px) {
+      width: 70%;
+      margin: 0 auto;
+    }
+    @include respond(tablet){
+      width: 100%;
+      margin-top: 5rem;
+    }
+    &__button{
+      position: absolute;
+      bottom: 0;
+      z-index: 40;
+      font-size: 25px;
+      border: 1px solid #f6f7fa;
+      color: #f6f7fa;
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &--prev{
+        left: 0;
+      }
+      &--next{
+        left: 54px;
+      }
+    }
+  }
+  &-slide{
+    color: #ffffff;
+    max-width: 100%;
+    &__header{
+      font-size: 6rem;
+      font-weight: 100;
+      @include respond(phone){
+        text-align: center;
+      }
+    }
+    &__text{
+      color: #8492af;
+      line-height: 1.8;
+      font-size: 18px;
+      margin-left: 8px;
+      @include respond(phone){
+        padding-right: 0;
+      }
+      &:first-of-type{
+        margin-top: 1.7vw;
+      }
+      &:nth-of-type(2){
+        margin-top: 1.3vw;
+      }
+    }
+  }
+}
+
+.state{
+  display: flex;
+  width: 100%;
+  font-size: 3.1rem;
+  margin-bottom: 27px;
+  &__title{
+    color: #ffffff;
+    margin-right: 0.5vw;    
+  }
+  &__number{
+    color: #8492af;
+  }
+  &__more{
+    justify-self: end;
+    align-self: center;
+    color: #8391ae;
+  }
+}
+
+.task{
+  display: flex;
+  padding: 30px;
+  background-color: #fff;
+  position: relative;
+  z-index: 40;
+  justify-content: flex-start;
+  align-items: center;
+  &__img{
+    width: 43px;
+    height: 43px;
+    align-self: start;
+    background-color: #5584ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+    margin-right: 22px;
+  }
+  &__time{
+    color: #a1abc1;
+    font-size: 1.7em;
+    &::before{
+      content: '\f017';
+      font-family: "Font Awesome 5 Free";
+      display: inline-block;
+      font-size: 1em;
+      padding-right: 10px;
+    }
+    &.task__time_is-completed{
+      color: #3ecf52;
+    }
+    &.task__time_is-delayed{
+      color: #f85086;
+    }
+  }
+  &__options{
+    margin-left: auto;
+    .dot{
+      display: block;
+      width: 5px;
+      height: 5px;
+      background-color: #8492af;
+      border-radius: 50%;
+      &:first-child{
+        margin-top: 3px;
+      }
+      &:not(:last-child){
+        margin-bottom: 5px;
+      }
+    }
+  }
+  &__title{
+    color: #0e1a35;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  &-placeholder{
+    border: 1px dashed #8492af;
+    width: 100%;
+    min-height: 11rem;
+    position: relative;
+    cursor: pointer;
+    
+    &_completed::after{
+      content: 'Drop here';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #8492af;
+      font-size: 2rem;
+      font-weight: 600;
+      z-index: 1
+    }
+    &:not(:last-child){
+      margin-bottom: 13px;
+    }
+  }
+}
